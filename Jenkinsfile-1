@@ -1,5 +1,5 @@
 pipeline {
-  agent {label 'karthikey'}
+  agent {label 'Built-In Node'}
 
   stages {
     stage('Hello') {
