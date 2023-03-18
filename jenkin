@@ -1,0 +1,12 @@
+pipeline {
+  agent { label 'karthikey' }
+  
+  stages {
+    stage('ansible-playbook') {
+      steps {
+      //  sh 'ansible-galaxy collection install -r requirements.yml'
+        sh 'ansible-playbook -i hosts file.yml'
+      }
+    }
+  }
+}
