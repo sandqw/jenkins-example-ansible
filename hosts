@@ -1,1 +1,2 @@
 node1 ansible_host=192.168.253.128 ansible_user=node1
+oracle ansible_host=192.168.253.140 ansible_user=oracle
