@@ -1,0 +1,14 @@
+---
+- name: sample
+  hosts: all
+  become: true
+  become_user: node1
+  tasks:
+    - name: sample
+      file:
+        dest: /home/node1/REDCROSS.txt
+        state: touch
+      register: result
+    - debug:
+        var: result
+
